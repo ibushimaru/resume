@@ -359,4 +359,4 @@
 
 ---
 
-*この履歴書は [tsukuboshi/honox-resume-template](https://github.com/tsukuboshi/honox-resume-template) を使用して作成されました。素晴らしいテンプレートを提供してくださった [@tsukuboshi](https://twitter.com/tsukuboshi) さんに感謝します。*
+*この履歴書は [tsukuboshi/honox-resume-template](https://github.com/tsukuboshi/honox-resume-template) を使用して作成されました。素晴らしいテンプレートを提供してくださった [@tsukuboshi0755](https://x.com/tsukuboshi0755) さんに感謝します。*
