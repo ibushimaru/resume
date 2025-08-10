@@ -161,7 +161,15 @@ export function convertTableToHtml(content: string): string {
         const src = match[2];
         // 相対パスを適切に処理
         const imageSrc = src.startsWith('./') ? src.substring(2) : src;
-        htmlContent += `<img src="/${imageSrc}" alt="${altText}" class="max-w-full h-auto my-4 rounded-lg shadow-md" loading="lazy">`;
+        htmlContent += `<div class="my-6"><img src="/${imageSrc}" alt="${altText}" class="w-full max-w-2xl mx-auto rounded-lg shadow-lg" style="height: auto;" loading="lazy"></div>`;
+        
+        // 次の行がキャプションの場合（*で始まる行）
+        if (i + 1 < lines.length && lines[i + 1].trim().startsWith('*') && lines[i + 1].trim().endsWith('*')) {
+          i++;
+          const caption = lines[i].trim().replace(/^\*/, '').replace(/\*$/, '');
+          htmlContent += `<p class="text-center text-sm text-gray-600 italic mt-2 mb-4">${caption}</p>`;
+        }
+        
         i++;
         continue;
       }
