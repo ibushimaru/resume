@@ -153,6 +153,20 @@ export function convertTableToHtml(content: string): string {
       }
     }
 
+    // 画像
+    if (currentLine.match(/^!\[([^\]]*)\]\(([^)]+)\)/)) {
+      const match = currentLine.match(/^!\[([^\]]*)\]\(([^)]+)\)/);
+      if (match) {
+        const altText = match[1];
+        const src = match[2];
+        // 相対パスを適切に処理
+        const imageSrc = src.startsWith('./') ? src.substring(2) : src;
+        htmlContent += `<img src="/${imageSrc}" alt="${altText}" class="max-w-full h-auto my-4 rounded-lg shadow-md" loading="lazy">`;
+        i++;
+        continue;
+      }
+    }
+
     // 通常の行
     if (currentLine) {
       htmlContent += processContent(currentLine) + "<br>";
