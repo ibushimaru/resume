@@ -1,17 +1,17 @@
 {
-  "_honox-island-CQuY1a2M.js": {
-    "file": "static/honox-island-CQuY1a2M.js",
+  "_honox-island-DwjOYBQh.js": {
+    "file": "static/honox-island-DwjOYBQh.js",
     "name": "honox-island",
     "imports": [
       "app/client.ts"
     ]
   },
-  "_index-BSr-VoXW.js": {
-    "file": "static/index-BSr-VoXW.js",
+  "_index-BemonRTD.js": {
+    "file": "static/index-BemonRTD.js",
     "name": "index"
   },
   "app/client.ts": {
-    "file": "static/client-CNZ66wQm.js",
+    "file": "static/client-Cb8WC4eA.js",
     "name": "client",
     "src": "app/client.ts",
     "isEntry": true,
@@ -24,35 +24,35 @@
     ]
   },
   "app/islands/CollapsibleSection.tsx": {
-    "file": "static/CollapsibleSection-Bb31vRlJ.js",
+    "file": "static/CollapsibleSection-DBbSODR-.js",
     "name": "CollapsibleSection",
     "src": "app/islands/CollapsibleSection.tsx",
     "isDynamicEntry": true,
     "imports": [
       "app/client.ts",
-      "_honox-island-CQuY1a2M.js",
-      "_index-BSr-VoXW.js"
+      "_honox-island-DwjOYBQh.js",
+      "_index-BemonRTD.js"
     ]
   },
   "app/islands/DownloadSection.tsx": {
-    "file": "static/DownloadSection-KVuGlPTN.js",
+    "file": "static/DownloadSection-CJWYGb2p.js",
     "name": "DownloadSection",
     "src": "app/islands/DownloadSection.tsx",
     "isDynamicEntry": true,
     "imports": [
       "app/client.ts",
-      "_honox-island-CQuY1a2M.js"
+      "_honox-island-DwjOYBQh.js"
     ]
   },
   "app/islands/SectionGroup.tsx": {
-    "file": "static/SectionGroup-Ci_1rRZ-.js",
+    "file": "static/SectionGroup-FyS3jy7O.js",
     "name": "SectionGroup",
     "src": "app/islands/SectionGroup.tsx",
     "isDynamicEntry": true,
     "imports": [
       "app/client.ts",
-      "_honox-island-CQuY1a2M.js",
-      "_index-BSr-VoXW.js"
+      "_honox-island-DwjOYBQh.js",
+      "_index-BemonRTD.js"
     ]
   },
   "app/style.css": {
@@ -61,7 +61,7 @@
     "isEntry": true
   },
   "node_modules/honox/dist/client/runtime.js": {
-    "file": "static/runtime-BOlPsHE7.js",
+    "file": "static/runtime-DZ4IXYs-.js",
     "name": "runtime",
     "src": "node_modules/honox/dist/client/runtime.js",
     "isDynamicEntry": true,
