@@ -1,6 +1,3 @@
-// グローバル変数として__BASE_PATH__を宣言
-declare const __BASE_PATH__: string | undefined;
-
 // HTML文字列定数
 const INLINE_CODE_CLASSES =
   "inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 border border-blue-200 shadow-sm hover:bg-blue-200 transition-colors duration-200";
@@ -156,23 +153,28 @@ export function convertTableToHtml(content: string): string {
       }
     }
 
-    // 画像
+    // 画像 - シンプルなMarkdown記法の処理
     if (currentLine.match(/^!\[([^\]]*)\]\(([^)]+)\)/)) {
       const match = currentLine.match(/^!\[([^\]]*)\]\(([^)]+)\)/);
       if (match) {
         const altText = match[1];
-        const src = match[2];
-        // 相対パスを適切に処理（GitHub Pages用にリポジトリ名を含める）
-        const imageSrc = src.startsWith('./') ? src.substring(2) : src;
-        const basePath = typeof __BASE_PATH__ !== 'undefined' ? __BASE_PATH__ : '/resume/';
-        const fullImageSrc = `${basePath}${imageSrc}`;
-        htmlContent += `<div class="my-6"><img src="${fullImageSrc}" alt="${altText}" class="w-full max-w-2xl mx-auto rounded-lg shadow-lg" style="height: auto;" loading="lazy"></div>`;
+        let src = match[2];
+        
+        // ./を削除（publicディレクトリの画像を直接参照）
+        if (src.startsWith('./')) {
+          src = src.substring(2);
+        }
+        
+        // 画像をdivで囲んで中央配置とサイズ調整
+        htmlContent += `<div class="my-6 flex justify-center">`;
+        htmlContent += `<img src="${src}" alt="${altText}" class="max-w-full md:max-w-2xl rounded-lg shadow-lg" loading="lazy">`;
+        htmlContent += `</div>`;
         
         // 次の行がキャプションの場合（*で始まる行）
         if (i + 1 < lines.length && lines[i + 1].trim().startsWith('*') && lines[i + 1].trim().endsWith('*')) {
           i++;
           const caption = lines[i].trim().replace(/^\*/, '').replace(/\*$/, '');
-          htmlContent += `<p class="text-center text-sm text-gray-600 italic mt-2 mb-4">${caption}</p>`;
+          htmlContent += `<p class="text-center text-sm text-gray-600 italic -mt-4 mb-6">${caption}</p>`;
         }
         
         i++;

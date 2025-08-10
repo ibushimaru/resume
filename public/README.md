@@ -362,3 +362,7 @@
 
 **連絡先**: [ibushimaru@veriscio.com]  
 **最終更新**: 2025年8月10日
+
+---
+
+*この履歴書は [tsukuboshi/honox-resume-template](https://github.com/tsukuboshi/honox-resume-template) を使用して作成されました。素晴らしいテンプレートを提供してくださった [@tsukuboshi](https://twitter.com/tsukuboshi) さんに感謝します。*
