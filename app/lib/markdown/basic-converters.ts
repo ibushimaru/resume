@@ -1,3 +1,6 @@
+// グローバル変数として__BASE_PATH__を宣言
+declare const __BASE_PATH__: string | undefined;
+
 // HTML文字列定数
 const INLINE_CODE_CLASSES =
   "inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 border border-blue-200 shadow-sm hover:bg-blue-200 transition-colors duration-200";
@@ -159,9 +162,11 @@ export function convertTableToHtml(content: string): string {
       if (match) {
         const altText = match[1];
         const src = match[2];
-        // 相対パスを適切に処理
+        // 相対パスを適切に処理（GitHub Pages用にリポジトリ名を含める）
         const imageSrc = src.startsWith('./') ? src.substring(2) : src;
-        htmlContent += `<div class="my-6"><img src="/${imageSrc}" alt="${altText}" class="w-full max-w-2xl mx-auto rounded-lg shadow-lg" style="height: auto;" loading="lazy"></div>`;
+        const basePath = typeof __BASE_PATH__ !== 'undefined' ? __BASE_PATH__ : '/resume/';
+        const fullImageSrc = `${basePath}${imageSrc}`;
+        htmlContent += `<div class="my-6"><img src="${fullImageSrc}" alt="${altText}" class="w-full max-w-2xl mx-auto rounded-lg shadow-lg" style="height: auto;" loading="lazy"></div>`;
         
         // 次の行がキャプションの場合（*で始まる行）
         if (i + 1 < lines.length && lines[i + 1].trim().startsWith('*') && lines[i + 1].trim().endsWith('*')) {
