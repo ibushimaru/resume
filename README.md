@@ -27,6 +27,7 @@
 > **「この世の全てのゲームを日本語で遊べるようにしたい」**
 
 工業高等専門学校時代から有志でゲーム翻訳に6年間携わり、2作品で公式採用を獲得。現在はMac mini (2024) を用いてローカルLLMを用いた翻訳環境を構築し、ローカライゼーションの高度化を目指している。
+また、ゲーム翻訳に携わる人どうしの交流を増やし、情報交換を活発化することを目的として複数のコミュニティを運営している。
 
 ##  個人プロジェクト・業務外活動（アピールポイント）
 
@@ -151,8 +152,19 @@
 
 #### ブログ・記事執筆
 
-- **note記事**: 翻訳プロジェクトの詳細記録、技術情報の共有
-- **はてなブログ**: 過去の翻訳活動記録、プロジェクト管理ノウハウ
+**note記事**: 翻訳プロジェクトの詳細記録、技術情報の共有
+- [Vault of the Void 日本語化裏話](https://note.com/ibushi_maru/n/n404cfc89edc5)
+- [Nuclear Throne 日本語化MOD配布](https://note.com/ibushi_maru/n/n9264fd728323)
+- [有志翻訳とポストエディット](https://note.com/ibushi_maru/n/n313bd89ab941)
+- [noteマガジン - ゲーム翻訳関連記事集](https://note.com/ibushi_maru/m/m383dc84c979d)
+
+**はてなブログ**: 過去の翻訳活動記録、プロジェクト管理ノウハウ
+- [Risk of Rain 日本語化完成報告](https://ibushi-maru.hatenablog.com/entry/2020/11/23/232353)
+- [Unworthy 日本語化プロジェクト](https://ibushi-maru.hatenablog.com/entry/2021/07/31/181622)
+- [One Step from Eden MOD制作記](https://ibushi-maru.hatenablog.com/entry/2020/08/01/000134)
+- [翻訳を通じた開発者との関係構築](https://ibushi-maru.hatenablog.com/entry/2020/04/17/015228)
+- [有志翻訳の始め方](https://ibushi-maru.hatenablog.com/entry/2019/04/24/094502)
+- [翻訳コミュニティの重要性](https://ibushi-maru.hatenablog.com/entry/2019/03/02/071344)
 
 ## 職務経歴
 
