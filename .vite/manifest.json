@@ -1,0 +1,72 @@
+{
+  "_honox-island-BBOMJZhz.js": {
+    "file": "static/honox-island-BBOMJZhz.js",
+    "name": "honox-island",
+    "imports": [
+      "app/client.ts"
+    ]
+  },
+  "_index-BJLlL6Rz.js": {
+    "file": "static/index-BJLlL6Rz.js",
+    "name": "index"
+  },
+  "app/client.ts": {
+    "file": "static/client-DAuMW1qO.js",
+    "name": "client",
+    "src": "app/client.ts",
+    "isEntry": true,
+    "dynamicImports": [
+      "app/islands/CollapsibleSection.tsx",
+      "app/islands/DownloadSection.tsx",
+      "app/islands/SectionGroup.tsx",
+      "node_modules/honox/dist/client/runtime.js",
+      "node_modules/honox/dist/client/runtime.js"
+    ]
+  },
+  "app/islands/CollapsibleSection.tsx": {
+    "file": "static/CollapsibleSection-BhyMVnvQ.js",
+    "name": "CollapsibleSection",
+    "src": "app/islands/CollapsibleSection.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "app/client.ts",
+      "_honox-island-BBOMJZhz.js",
+      "_index-BJLlL6Rz.js"
+    ]
+  },
+  "app/islands/DownloadSection.tsx": {
+    "file": "static/DownloadSection-Bdq4yyXl.js",
+    "name": "DownloadSection",
+    "src": "app/islands/DownloadSection.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "app/client.ts",
+      "_honox-island-BBOMJZhz.js"
+    ]
+  },
+  "app/islands/SectionGroup.tsx": {
+    "file": "static/SectionGroup-DPArvX3n.js",
+    "name": "SectionGroup",
+    "src": "app/islands/SectionGroup.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "app/client.ts",
+      "_honox-island-BBOMJZhz.js",
+      "_index-BJLlL6Rz.js"
+    ]
+  },
+  "app/style.css": {
+    "file": "static/style-CgR-KQJI.css",
+    "src": "app/style.css",
+    "isEntry": true
+  },
+  "node_modules/honox/dist/client/runtime.js": {
+    "file": "static/runtime-D16_v8ce.js",
+    "name": "runtime",
+    "src": "node_modules/honox/dist/client/runtime.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "app/client.ts"
+    ]
+  }
+}
